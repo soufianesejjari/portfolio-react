@@ -26,6 +26,15 @@ export const ProjectList = [
     github_url: "https://github.com/soufianesejjari/stageCommuneProjet",
     demo_url: "https://github.com/soufianesejjari/stageCommuneProjet/blob/main/images_pdf/soufiane%20sejjari%20rapport%20(1).pdf",
   },
+    {
+    img: "https://user-images.githubusercontent.com/81421925/212548688-93895b90-62a6-41d4-b677-6fc75b918100.png",
+    title: "Interactive Sales Dashboard: A JavaFX/Scala POS System",
+    description:
+      "A robust Point of Sale system that allows users to efficiently manage sales data and analyze it in an interactive dashboard using JavaFX, Scala and MySQL.",
+    tech_stack: " JavaFX, Scala, MySQL,sbt, launch4j",
+    github_url: "https://github.com/soufianesejjari/ScalaProjet",
+    demo_url: "https://github.com/soufianesejjari/ScalaProjet/tree/main/application",
+  },
 ];
 
 // --------------------------------------- Skills
