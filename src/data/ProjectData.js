@@ -33,7 +33,7 @@ export const ProjectList = [
       "A robust Point of Sale system that allows users to efficiently manage sales data and analyze it in an interactive dashboard using JavaFX, Scala and MySQL.",
     tech_stack: " JavaFX, Scala, MySQL,sbt, launch4j",
     github_url: "https://github.com/soufianesejjari/ScalaProjet",
-    demo_url: "https://github.com/soufianesejjari/ScalaProjet/tree/main/application",
+    demo_url: "https://www.canva.com/design/DAFXGbwDHdY/zosmLGJResbQaeBfbwv8gA/view?mode=prototype#untitled-page-6",
   },
 ];
 
