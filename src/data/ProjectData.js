@@ -9,6 +9,7 @@ export const ProjectList = [
     github_url: "https://github.com/soufianesejjari/covInfo",
     demo_url: "https://github.com/soufianesejjari/covInfo/tree/master/demo",
   },
+
   {
     img: "https://github.com/soufianesejjari/datawarehouse_projet/blob/main/ImageResult/image1.png?raw=true",
     title: "Data Visualization with Power BI and MySQL",
@@ -26,6 +27,15 @@ export const ProjectList = [
     github_url: "https://github.com/soufianesejjari/stageCommuneProjet",
     demo_url: "https://github.com/soufianesejjari/stageCommuneProjet/blob/main/images_pdf/soufiane%20sejjari%20rapport%20(1).pdf",
   },
+      {
+    img: "https://github.com/soufianesejjari/Data-scraping-and-Analysis-LinkedIn-Profiles-Students/blob/main/image.png?raw=true",
+    title: "Data Analysis on LinkedIn Profiles of ENSIAS Students",
+    description:
+      "n this project, I conducted data analysis on LinkedIn profiles of ENSIAS students, I uncovered trends in skills and experiences to enhance education and career opportunities for students.",
+    tech_stack: "web scraping, JSON, Python, MongoDB",
+    github_url: "https://github.com/soufianesejjari/Data-scraping-and-Analysis-LinkedIn-Profiles-Students",
+    demo_url: "https://github.com/soufianesejjari/Data-scraping-and-Analysis-LinkedIn-Profiles-Students",
+  },
     {
     img: "https://user-images.githubusercontent.com/81421925/212548688-93895b90-62a6-41d4-b677-6fc75b918100.png",
     title: "Interactive Sales Dashboard: A JavaFX/Scala POS System",
@@ -34,6 +44,15 @@ export const ProjectList = [
     tech_stack: " JavaFX, Scala, MySQL,sbt, launch4j",
     github_url: "https://github.com/soufianesejjari/ScalaProjet",
     demo_url: "https://www.canva.com/design/DAFXGbwDHdY/zosmLGJResbQaeBfbwv8gA/view?mode=prototype",
+  },
+      {
+    img: "https://github-production-user-asset-6210df.s3.amazonaws.com/81421925/260799596-9f49b8ff-1ccb-4863-a3ee-d7a6f50a4170.png",
+    title: "Dynamic Performance Analytics API: Leveraging MySQL and FastAPI",
+    description:
+      "Develop a powerful API for dynamic performance analysis, utilizing MySQL and FastAPI. Access, filter, and visualize user performance data with caching for optimized performance.",
+    tech_stack: " Python, FastApi , MySQL, Json",
+    github_url: "https://github.com/soufianesejjari/Dynamic-Performance-Analytics-API-Leveraging-MySQL-and-FastAPI/",
+    demo_url: "https://soufianesejjari.hashnode.dev/api-de-visites-pour-lanalyse-des-performances-des-utilisateurs",
   },
 ];
 
