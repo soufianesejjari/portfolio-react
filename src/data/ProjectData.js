@@ -10,7 +10,7 @@ export const ProjectList = [
     demo_url: "https://github.com/soufianesejjari/fsjNav",
   },
     {
-    img: "https://github.com/Moroccan-Data-Scientists/Ramadan-Sentiment-Analysis/assets/81421925/4e3dc1c3-dbe2-4c61-b6c4-d5c1b0ecd4a4?raw=true",
+    img: "https://moroccansentimentsanalysis.netlify.app/img/img-12.jpg",
     title: "DATAFTOUR Initiative: Ramadan Sentiment Analysis",
     description:
       "DATAFTOUR, led by the MDS community, explores Moroccan society and culture through data-driven approaches. Focusing on Ramadan, the project analyzes the sentiments and emotions of the population during this significant cultural and religious event.",
