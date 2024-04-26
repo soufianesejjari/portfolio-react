@@ -1,5 +1,14 @@
 // --------------------------------------- Project List
 export const ProjectList = [
+        {
+    img: "https://private-user-images.githubusercontent.com/81421925/316079640-3cbe0388-e98c-4aaa-a6df-b9f4ae5cc609.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQxNTAxNzAsIm5iZiI6MTcxNDE0OTg3MCwicGF0aCI6Ii84MTQyMTkyNS8zMTYwNzk2NDAtM2NiZTAzODgtZTk4Yy00YWFhLWE2ZGYtYjlmNGFlNWNjNjA5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDI2VDE2NDQzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY2MzE5YTQ0NmQ1Nzc1YzZiMDIzODYwMWZmN2ZiOWI1N2I4MDg3ZDExNWVhNzk4OGY3MjE5NDNmNjNkOTkzZGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Hfq0qKg8YnsaIrpje2eV3iNgkyVmrzLbmTIgglVZkd8?raw=true",
+    title: "fsNav: Faculty of Sciences Navigation App",
+    description:
+      "fsNav is a mobile application developed using React Native and Expo, serving as a navigation app for the Faculty of Sciences El Jadida. It integrates Google Maps for navigation, Firebase for data storage, and authentication features. Users can explore events, locations, and search for places within the faculty.",
+    tech_stack: "React Native, Expo, Google Maps API, Firebase",
+    github_url: "https://github.com/soufianesejjari/fsjNav",
+    demo_url: "https://github.com/soufianesejjari/fsjNav",
+  },
     {
     img: "https://github.com/Moroccan-Data-Scientists/Ramadan-Sentiment-Analysis/assets/81421925/4e3dc1c3-dbe2-4c61-b6c4-d5c1b0ecd4a4?raw=true",
     title: "DATAFTOUR Initiative: Ramadan Sentiment Analysis",
