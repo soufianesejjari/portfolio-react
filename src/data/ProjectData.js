@@ -1,5 +1,14 @@
 // --------------------------------------- Project List
 export const ProjectList = [
+    {
+    img: "https://github.com/Moroccan-Data-Scientists/Ramadan-Sentiment-Analysis/assets/81421925/4e3dc1c3-dbe2-4c61-b6c4-d5c1b0ecd4a4?raw=true",
+    title: "DATAFTOUR Initiative: Ramadan Sentiment Analysis",
+    description:
+      "DATAFTOUR, led by the MDS community, explores Moroccan society and culture through data-driven approaches. Focusing on Ramadan, the project analyzes the sentiments and emotions of the population during this significant cultural and religious event.",
+    tech_stack: "web scraping, data processing, NLP, TensorFlow, sentiment analysis",
+    github_url: "https://github.com/Moroccan-Data-Scientists/Ramadan-Sentiment-Analysis/tree/main",
+    demo_url: "https://moroccansentimentsanalysis.netlify.app/",
+  },
   {
     img: "https://github.com/soufianesejjari/covInfo/blob/master/covInfo.png?raw=true",
     title: "COVID-19 Awareness and Statistics Android App",
