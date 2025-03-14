@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Chatbot from 'react-llm-chatbot';
 import './SimpleChatbot.css';
 
