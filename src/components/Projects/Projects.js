@@ -1,8 +1,12 @@
 import React from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
+
 function Projects() {
+  
+
   return (
     <>
+
       <svg
         height="100%"
         width="100%"

@@ -21,6 +21,7 @@ function Hero() {
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <HeroContainer>
+
         <HeroWrapper>
           <HeroLeft>
             <h1>Hi, I'm Soufiane Sejjari</h1>
