@@ -1,0 +1,11 @@
+[build]
+  command = "CI= NODE_OPTIONS=--openssl-legacy-provider npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "16"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
