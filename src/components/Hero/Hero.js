@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "../Dropdown/Dropdown";
 import Header from "../Header/Header";
+import { useProfile } from "../../context/ProfileContext";
 import {
   HeroContainer,
   HeroWrapper,
@@ -10,30 +11,32 @@ import {
   ScrollDown,
   ScrollLink,
 } from "./HeroElements";
+
 function Hero() {
   const [isOpen, setIsOpen] = useState(false);
+  const { profileData } = useProfile();
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  
   return (
     <main>
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <HeroContainer>
-
         <HeroWrapper>
           <HeroLeft>
-            <h1>Hi, I'm Soufiane Sejjari</h1>
-            <h5> Data Analyst</h5>
+            <h1>Hi, I'm {profileData?.name || 'Developer'}</h1>
+            <h5>{profileData?.title || 'Portfolio'}</h5>
             <p>
-              I am  Data Scientist student.
+              {profileData?.tagline || 'Welcome to my portfolio'}
             </p>
           </HeroLeft>
           <HeroRight>
             <Image
               src="https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/man-svgrepo-com.svg"
-              alt="man-svgrepo"
+              alt="hero-image"
             />
           </HeroRight>
         </HeroWrapper>

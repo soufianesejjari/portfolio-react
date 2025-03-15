@@ -1,49 +1,67 @@
 import React from "react";
-import { ProjectList } from "../../../data/ProjectData";
 import {
   Card,
   CardLeft,
   CardRight,
   Stack,
   BtnGroup,
+  FallbackImage,
+  TechTag
 } from "./ProjectCardElements";
-function ProjectCard() {
+
+function ProjectCard({ img, title, description, tech_stack, github_url, demo_url }) {
+  // Parse tech stack from string to array if it's not already an array
+  const techStackArray = Array.isArray(tech_stack) 
+    ? tech_stack 
+    : tech_stack?.split(',').map(item => item.trim()) || [];
+  
   return (
-    <>
-      {ProjectList.map((list, index) => (
-        <Card key={index}>
-          <CardLeft>
-            <img src={list.img} alt={list.name} />
-          </CardLeft>
-          <CardRight>
-            <h4>{list.title}</h4>
-            <p>{list.description}</p>
-            <Stack>
-              <span className="stackTitle">Tech Stack -</span>
-              <span className="tags">{list.tech_stack}</span>
-            </Stack>
-            <BtnGroup>
-              <a
-                className="btn btn2 SecondarBtn"
-                href={list.github_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-              <a
-                className="btn PrimaryBtn"
-                href={list.demo_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo ➜
-              </a>
-            </BtnGroup>
-          </CardRight>
-        </Card>
-      ))}
-    </>
+    <Card>
+      <CardLeft>
+        {img ? (
+          <img src={img} alt={title} />
+        ) : (
+          <FallbackImage>
+            <h3>{title}</h3>
+            <div className="tech-tags">
+              {techStackArray.slice(0, 3).map((tech, index) => (
+                <span key={index}>{tech}</span>
+              ))}
+            </div>
+          </FallbackImage>
+        )}
+      </CardLeft>
+      <CardRight>
+        <h4>{title}</h4>
+        <p>{description}</p>
+        <Stack>
+          <span className="stackTitle">Tech Stack</span>
+          <div className="tags">
+            {techStackArray.map((tech, index) => (
+              <TechTag key={index}>{tech}</TechTag>
+            ))}
+          </div>
+        </Stack>
+        <BtnGroup>
+          <a
+            className="btn btn2 SecondarBtn"
+            href={github_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+          <a
+            className="btn PrimaryBtn"
+            href={demo_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Demo ➜
+          </a>
+        </BtnGroup>
+      </CardRight>
+    </Card>
   );
 }
 

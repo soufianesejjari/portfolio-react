@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import styled from "styled-components";
+import { useProfile } from "../../context/ProfileContext";
 
 const Social = styled.div`
   display: block;
@@ -30,13 +31,16 @@ const Social = styled.div`
     display: none;
   }
 `;
+
 function FixSocialIcon() {
+  const { profileData } = useProfile();
+  
   return (
     <Social>
       <ul>
         <li className="item">
           <a
-            href="https://www.linkedin.com/in/soufiane-sejjari/"
+            href={profileData.social?.linkedin}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -45,7 +49,7 @@ function FixSocialIcon() {
         </li>
         <li className="item">
           <a
-            href="https://github.com/soufianesejjari/"
+            href={profileData.social?.github}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,7 +58,7 @@ function FixSocialIcon() {
         </li>
         <li className="item">
           <a
-            href="https://github.com/soufianesejjari/"
+            href={profileData.social?.instagram}
             target="_blank"
             rel="noopener noreferrer"
           >

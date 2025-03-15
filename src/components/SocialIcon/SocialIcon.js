@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { useProfile } from "../../context/ProfileContext";
 
 import styled from "styled-components";
 
@@ -32,12 +33,14 @@ export const SocialDiv = styled.div`
 `;
 
 function SocialIcon() {
+  const { profileData } = useProfile();
+  
   return (
-    <SocialDiv>soufianesejjari
+    <SocialDiv>
       <ul>
         <li className="item">
           <a
-            href="https://www.linkedin.com/in/soufiane-sejjari/"
+            href={profileData.social?.linkedin}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,7 +49,7 @@ function SocialIcon() {
         </li>
         <li className="item">
           <a
-            href="https://github.com/soufianesejjari/"
+            href={profileData.social?.github}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,7 +58,7 @@ function SocialIcon() {
         </li>
         <li className="item">
           <a
-            href="https://www.instagram.com/soufianesejjari/"
+            href={profileData.social?.instagram}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -63,6 +66,7 @@ function SocialIcon() {
           </a>
         </li>
       </ul>
+      <p>Follow Me</p>
     </SocialDiv>
   );
 }

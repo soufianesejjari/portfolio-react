@@ -74,6 +74,31 @@ export const ProjectList = [
   },
 ];
 
+// --------------------------------------- Education List
+export const educationList = [
+  {
+    school: "National School of Applied Sciences",
+    degree: "Master's Degree",
+    fieldOfStudy: "Data Science",
+    startDate: "2021",
+    endDate: "2023"
+  },
+  {
+    school: "University of El Jadida",
+    degree: "Bachelor's Degree",
+    fieldOfStudy: "Computer Science",
+    startDate: "2018",
+    endDate: "2021"
+  },
+  {
+    school: "Lycée Mohammed V",
+    degree: "Baccalaureate",
+    fieldOfStudy: "Mathematics and Sciences",
+    startDate: "2015",
+    endDate: "2018"
+  }
+];
+
 // --------------------------------------- Skills
 
 export const stackList = [
@@ -110,3 +135,31 @@ export const stackList = [
     name: "PowerBi",
   },
 ];
+
+// --------------------------------------- User Data
+
+export const UserData = {
+  // Basic Information
+  name: "Soufiane Sejjari",
+  title: "Data Analyst",
+  email: "sejjari.soufiane@gmail.com",
+  bio: "Hi there! My name is Soufiane Sejjari and I am currently completing my professional bachelor's degree in big data. I am passionate about data science and all things related to data analysis. Throughout my studies, I have had the opportunity to work on projects in data analysis, web development, and mobile development, which have helped me to develop a strong foundation in these areas. In my free time, I enjoy staying up to date with the latest trends and technologies in the field. I am excited to continue learning and growing as a data professional, and I am always open to new opportunities and challenges. Thank you for visiting my portfolio!",
+  tagline: "I am Data Scientist student.",
+  
+  // Social Media Links
+  social: {
+    linkedin: "https://www.linkedin.com/in/soufiane-sejjari/",
+    github: "https://github.com/soufianesejjari/",
+    instagram: "https://github.com/soufianesejjari/", // Using GitHub as placeholder
+  },
+  
+  // Profile Image
+  profileImg: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/Assets/profile2.png?raw=true",
+  heroImg: "https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/man-svgrepo-com.svg",
+  
+  // API Credentials
+  chatbot: {
+    token: "ca3b1bc9fc1ef307aea6eaffdf7e366c",
+    apiBaseURL: "https://soufianesejjari-chatai.hf.space"
+  }
+};
