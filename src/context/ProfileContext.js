@@ -24,8 +24,8 @@ export const ProfileProvider = ({ children }) => {
               ...project,
               tech_stack: project.tech_stack || ''
             })),
-            stackList: stackList,
-            educations: educationList || [] // Include default education data
+            stackList: stackList || [],
+            educations: educationList || []
           };
           setProfileData(defaultData);
           setLoading(false);
@@ -36,7 +36,7 @@ export const ProfileProvider = ({ children }) => {
         const data = await fetchProfileData(profileId);
         
         // Process projects to ensure tech_stack is properly formatted
-        const processedProjects = data.projects 
+        const processedProjects = data?.projects 
           ? data.projects.map(project => ({
               ...project,
               tech_stack: project.tech_stack || ''
@@ -48,12 +48,12 @@ export const ProfileProvider = ({ children }) => {
         
         // Normalize data to ensure consistency with expected structure
         const normalizedData = {
+          ...DefaultUserData,
           ...data,
           projects: processedProjects,
-          // Use API stackList or default, but limit to first 8 items if from API
-          stackList: data.stackList ? data.stackList.slice(0, 8) : stackList.slice(0, 8),
-          educations: data.educations || educationList || [],
-          social: data.social || DefaultUserData.social || {}
+          stackList: data?.stackList ? data.stackList.slice(0, 8) : stackList.slice(0, 8),
+          educations: data?.educations || educationList || [],
+          social: data?.social || DefaultUserData.social || {}
         };
         
         setProfileData(normalizedData);

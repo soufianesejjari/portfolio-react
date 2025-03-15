@@ -16,6 +16,9 @@ function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   const { profileData } = useProfile();
 
+  // Default image as fallback
+  const heroImage = profileData?.heroImg ||  "https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/man-svgrepo-com.svg";
+
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -35,7 +38,7 @@ function Hero() {
           </HeroLeft>
           <HeroRight>
             <Image
-              src="https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/man-svgrepo-com.svg"
+              src={heroImage}
               alt="hero-image"
             />
           </HeroRight>
