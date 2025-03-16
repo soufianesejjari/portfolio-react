@@ -208,7 +208,7 @@ export const UserData = {
   
   // API Credentials
   chatbot: {
-    token: "ca3b1bc9fc1ef307aea6eaffdf7e366c",
+    token: "4fd614209bbb33d1737c2b945d602ff3",
     apiBaseURL: "https://soufianesejjari-chatai.hf.space"
   }
 };
