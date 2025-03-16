@@ -8,7 +8,7 @@ import FixSocialIcon from "../components/SocialIcon/FixSocialIcon";
 import SimpleChatbot from "../components/SimpleChatbot/SimpleChatbot";
 
 function Home() {
-  const token = "416733c6d119a25d86636efa9e39eed1";
+  const token = "4fd614209bbb33d1737c2b945d602ff3";
   const api = "https://soufianesejjari-chatai.hf.space";
   
   return (
