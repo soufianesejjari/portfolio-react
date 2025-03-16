@@ -10,6 +10,7 @@ import {
   Image,
   ScrollDown,
   ScrollLink,
+  ImageContainer
 } from "./HeroElements";
 
 function Hero() {
@@ -17,7 +18,7 @@ function Hero() {
   const { profileData } = useProfile();
 
   // Default image as fallback
-  const heroImage = profileData?.heroImg ||  "https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/man-svgrepo-com.svg";
+  const profileImage = profileData?.profileImg || "https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/man-svgrepo-com.svg";
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -37,10 +38,12 @@ function Hero() {
             </p>
           </HeroLeft>
           <HeroRight>
-            <Image
-              src={heroImage}
-              alt="hero-image"
-            />
+            <ImageContainer>
+              <Image
+                src={profileImage}
+                alt="hero-image"
+              />
+            </ImageContainer>
           </HeroRight>
         </HeroWrapper>
         <ScrollDown to="projects">

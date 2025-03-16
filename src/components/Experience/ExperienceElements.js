@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const EducationSection = styled.div`
+export const ExperienceSection = styled.div`
   flex: 1;
   width: 100%;
   
@@ -18,7 +18,7 @@ export const SectionSubtitle = styled.h3`
   text-align: center;
 `;
 
-export const EducationContainer = styled.div`
+export const ExperienceContainer = styled.div`
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem 0;
@@ -51,7 +51,7 @@ export const TimelineDot = styled.div`
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: rgb(57, 134, 250);
+  background-color: #6a8eae;
   margin-right: 1rem;
   z-index: 1;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -60,7 +60,7 @@ export const TimelineDot = styled.div`
 export const TimelineConnector = styled.div`
   width: 2px;
   height: 100%;
-  background-color: rgba(57, 134, 250, 0.3);
+  background-color: rgba(106, 142, 174, 0.3);
   margin-right: 1rem;
   margin-top: 10px;
 `;
@@ -80,24 +80,25 @@ export const TimelineContent = styled.div`
   }
 `;
 
-export const School = styled.h3`
+export const Company = styled.h3`
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: #151418;
   font-weight: 600;
 `;
 
-export const Degree = styled.h4`
+export const Position = styled.h4`
   font-size: 1.1rem;
-  color: rgb(57, 134, 250);
+  color: #6a8eae;
   margin-bottom: 0.5rem;
   font-weight: 500;
 `;
 
-export const FieldOfStudy = styled.p`
+export const Description = styled.p`
   font-size: 1rem;
   color: #444;
   margin-bottom: 0.75rem;
+  line-height: 1.5;
 `;
 
 export const TimelineDate = styled.div`

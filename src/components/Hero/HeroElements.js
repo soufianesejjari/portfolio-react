@@ -75,9 +75,70 @@ export const HeroRight = styled.div`
   display: flex;
 `;
 
-export const Image = styled.img`
+const float = keyframes`
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+`;
+
+export const ImageContainer = styled.div`
+  position: relative;
+  width: 300px;
   height: 300px;
-  width: auto;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(57, 134, 250), #6a8eae);
+  padding: 5px;
+  box-shadow: 
+    0 10px 20px rgba(57, 134, 250, 0.4),
+    0 6px 6px rgba(0, 0, 0, 0.1),
+    inset 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: ${float} 6s ease-in-out infinite;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(57, 134, 250, 0.5), transparent, rgba(57, 134, 250, 0.5));
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  &:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    width: 250px;
+    height: 250px;
+  }
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  filter: contrast(1.1) brightness(1.05);
+  transition: all 0.5s ease;
+  
+  &:hover {
+    filter: contrast(1.2) saturate(1.1) brightness(1.1);
+    transform: scale(1.02);
+  }
 `;
 
 const ScrollAnimation = keyframes`

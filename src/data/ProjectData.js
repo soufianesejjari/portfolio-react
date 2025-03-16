@@ -99,41 +99,90 @@ export const educationList = [
   }
 ];
 
+// --------------------------------------- Experience List
+export const experienceList = [
+  {
+    company: "Tech Innovations Inc.",
+    position: "Data Analyst",
+    startDate: "Jan 2022",
+    endDate: "Present",
+    description: "Working with cross-functional teams to collect, process, and analyze data. Creating visualizations and dashboards to communicate insights to stakeholders."
+  },
+  {
+    company: "Data Solutions Corp.",
+    position: "Junior Data Scientist",
+    startDate: "Jun 2021",
+    endDate: "Dec 2021",
+    description: "Implemented machine learning models for predictive analytics. Collaborated with product teams to integrate data-driven features."
+  },
+  {
+    company: "Digital Agency",
+    position: "Analytics Intern",
+    startDate: "Jan 2021",
+    endDate: "May 2021",
+    description: "Assisted in data collection and analysis for digital marketing campaigns."
+  }
+];
+
 // --------------------------------------- Skills
 
 export const stackList = [
   {
-    img: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/data/visua.jpg?raw=true",
     name: "Data Visualization",
+    category: "Technical"
   },
   {
-    img: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/data/etl.png?raw=true",
     name: "Data Cleaning",
+    category: "Technical"
   },
   {
-    img: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/data/python.png?raw=true",
     name: "Python",
+    category: "Technical"
   },
   {
-    img: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/data/r.png?raw=true",
-    name: "R",
+    name: "Project Management",
+    category: "Soft Skills"
   },
   {
-    img: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/data/sql.png?raw=true",
-    name: "SQL & NoSql",
+    name: "Leadership",
+    category: "Soft Skills"
   },
   {
-    img: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/data/st.jpg?raw=true",
-    name: "Advanced Statistics",
+    name: "Communication",
+    category: "Soft Skills"
   },
   {
-    img: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/data/ml.png?raw=true",
+    name: "SQL & NoSQL",
+    category: "Technical"
+  },
+  {
+    name: "Research",
+    category: "Domain Knowledge"
+  },
+  {
+    name: "Statistics",
+    category: "Domain Knowledge"
+  },
+  {
     name: "Machine Learning",
+    category: "Technical"
   },
   {
-    img: "https://github.com/soufianesejjari/portfolio-react/blob/master/src/data/power.png?raw=true",
-    name: "PowerBi",
+    name: "PowerBI",
+    category: "Technical"
   },
+  {
+    name: "Critical Thinking",
+    category: "Other"
+  },
+  {
+    name: "Problem Solving",
+    category: "Other"
+  },
+  {
+    name: "Adaptability",
+    category: "Other"
+  }
 ];
 
 // --------------------------------------- User Data

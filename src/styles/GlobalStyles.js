@@ -53,9 +53,24 @@ const GlobalStyles = createGlobalStyle`
   .BigCard {
     width: 100%;
     background-color: #fff;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2.2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .AboutBio {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.7;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
   }
 
   .btn {
@@ -99,8 +114,12 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  #contact, #about, #education {
+  #contact, #about, #education, #experience, #career {
     padding: 5rem 0;
+  }
+
+  .section-half {
+    padding: 0 !important;
   }
 
   .ProjectWrapper {

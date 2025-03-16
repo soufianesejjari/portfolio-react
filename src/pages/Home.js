@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero/Hero";
 import Projects from "../components/Projects/Projects";
-import Education from "../components/Education/Education";
+import EducationExperience from "../components/EducationExperience/EducationExperience";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
@@ -23,7 +23,6 @@ function Home() {
 
   return (
     <>
-      {/* Only render the chatbot if the data exists */}
       {profileData?.chatbot && profileData.chatbot.apiBaseURL && profileData.chatbot.token && (
         <SimpleChatbot 
           apiBaseURL={profileData.chatbot.apiBaseURL}
@@ -32,7 +31,7 @@ function Home() {
       )}
       <Hero />
       <Projects />
-      <Education /> {/* New Education section */}
+      <EducationExperience />
       <About />
       <Contact />
       <Footer />
